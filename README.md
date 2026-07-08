@@ -9,6 +9,8 @@
 - **完全オフの日**: 完全に休む日を指定
 - **スコア計算**: 火と土の充足度を自動計算
 - **メモ**: 今週の気づきや方針を記録
+- **過去の記録**: 過去6週間の記録を表示
+- **自動保存**: データはブラウザの LocalStorage に自動保存
 
 ## セットアップ
 
@@ -23,11 +25,28 @@ npm start
 npm run build
 ```
 
-## 公開
+## デプロイ
 
-GitHub Pages で自動デプロイされます。  
-https://o38kuk-netizen.github.io/selfmanagement
+### Vercel へのデプロイ（推奨）
 
-## 注意
+1. [Vercel](https://vercel.com) にサインアップ
+2. このリポジトリを Vercel に接続
+3. 自動でデプロイされます
 
-現在、ページをリロードするとデータはリセットされます。
+### GitHub Pages へのデプロイ
+
+`package.json` に以下を追加：
+```json
+"homepage": "https://o38kuk-netizen.github.io/selfmanagement"
+```
+
+## 技術スタック
+
+- React 18
+- React Hooks
+- Lucide React (アイコン)
+- LocalStorage (データ永続化)
+
+## ブラウザ対応
+
+モダンブラウザのすべて（Chrome、Firefox、Safari、Edge）
